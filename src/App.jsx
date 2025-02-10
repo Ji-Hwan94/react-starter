@@ -5,6 +5,8 @@ import { ChildComponent } from './samplePage/ChildComponent'
 import { Input } from './samplePage/Input'
 import { SelectBox } from './samplePage/SelectBox'
 import { Table } from './samplePage/Table'
+import { TodoMain } from './samplePage/TodoProject/TodoMain'
+import { TodoMainReducer } from './samplePage/TodoProject/TodoMainReducer'
 
 function App() {
 
@@ -19,7 +21,9 @@ function App() {
       <ChildComponent title={"제목3"} content={"만약 내용만 바꾸고 싶다면."}/>
       <ChildComponent title={"제목4"} content={"이런식으로 props를 통해 필요한 데이터만 넣어주면 됩니다."}/>
       <ChildComponent title={"제목5"} content={"쉽네요."}/> */}
-      <Table/>
+      {/* <Table/> */}
+      {/* <TodoMain /> */}
+      <TodoMainReducer />
     </>
   )
 }
