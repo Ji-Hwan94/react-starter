@@ -2,6 +2,7 @@
 import './App.css'
 import { Button } from './samplePage/Button'
 import { ChildComponent } from './samplePage/ChildComponent'
+import { ParantComponent } from './samplePage/Hook.useEffect/ParantComponent'
 import { Input } from './samplePage/Input'
 import { SelectBox } from './samplePage/SelectBox'
 import { Table } from './samplePage/Table'
@@ -23,7 +24,8 @@ function App() {
       <ChildComponent title={"제목5"} content={"쉽네요."}/> */}
       {/* <Table/> */}
       {/* <TodoMain /> */}
-      <TodoMainReducer />
+      {/* <TodoMainReducer /> */}
+      <ParantComponent/>
     </>
   )
 }
