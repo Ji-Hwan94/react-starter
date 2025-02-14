@@ -1,19 +1,25 @@
 
+import { useEffect, useState } from 'react'
 import './App.css'
 import { Button } from './samplePage/Button'
 import { ChildComponent } from './samplePage/ChildComponent'
 import { ParantComponent } from './samplePage/Hook.useEffect/ParantComponent'
 import { Input } from './samplePage/Input'
+import { HeavyJobComponent, HeavyJobComponent2, MemoComponent, MemoComponent2 } from './samplePage/MemoComponent'
+import { MemoSample } from './samplePage/MemoSample'
 import { SelectBox } from './samplePage/SelectBox'
 import { Table } from './samplePage/Table'
 import { TodoMain } from './samplePage/TodoProject/TodoMain'
 import { TodoMainReducer } from './samplePage/TodoProject/TodoMainReducer'
+import { CallbackSample } from './samplePage/CallbackSample'
 
 function App() {
+  // const [plusNum, setPlusNum] = useState(0);
+  // const [multiNum, setMultiNum] = useState(0);
 
   return (
     <>
-      <h1>React</h1>
+      {/* <h1>React</h1> */}
       {/* <Button /> */}
       {/* <Input /> */}
       {/* <SelectBox/> */}
@@ -25,7 +31,18 @@ function App() {
       {/* <Table/> */}
       {/* <TodoMain /> */}
       {/* <TodoMainReducer /> */}
-      <ParantComponent/>
+      {/* <ParantComponent/> */}
+      {/* <MemoSample/> */}
+      {/* <HeavyJobComponent num={5} />
+      <HeavyJobComponent num={6} /> */}
+      {/* <input type='number' onChange={(e) => setPlusNum(e.target.value)} />
+      <HeavyJobComponent num={Number(plusNum)} numObj={{ num: Number(plusNum) } } />
+      <MemoComponent num={Number(plusNum)} />
+      <br/>
+      <input type='number' onChange={(e) => setMultiNum(e.target.value)} />
+      <HeavyJobComponent2 num={Number(multiNum)} />
+      <MemoComponent2 num={Number(multiNum)} /> */}
+      <CallbackSample />
     </>
   )
 }
